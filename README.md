@@ -1,9 +1,17 @@
 # terraform-azure-service-health-notifications
 This repository can be used to configure Service Health alerts across subscriptions in Azure to a specified e-mail address using Terraform.
 
+To execute the script from command line run the following command:
+
 ```bash
 terraform apply -var email_address=enter_email
 ```
+
+If you already use Terraform to perform base Subscription configuration, this code can be modified to configure Service Health alerts as you deploy new Subs.
+
+To learn more about Azure Service Health visit the MS docs site at [Azure Service Health](https://docs.microsoft.com/en-us/azure/service-health/).
+
+To view the current Service Health alerts, access Service Health through the [Azure Portal](https://aka.ms/azureservicehealth)
 
 ## Requirements
 
